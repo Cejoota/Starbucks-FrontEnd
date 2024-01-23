@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Front-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="circulo"></div>
+    <img src="./imagens/logo.png" alt="Logo Starbucks" class="logo">
+
+    <div class="conteudo">
+        <div class="texto">
+            <h2>Na Starbucks, você encontra o <span>MELHOR</span> café do mundo, preparado com amor e atenção.</h2>
+            <p>Venha experimentar o sabor da inspiração na Starbucks</p>
+            <div class="botao">
+                <a href="https://www.starbucks.com.br"><button>Compre aqui!</button></a>
+            </div>
+        </div>        
+        <div class="imagem">
+            <img src="./imagens/img1.png" alt="Starbucks" class="verdao">
+        </div>
+    </div>
+    <div class="menu">
+        <img src="./imagens/img-pequena1.png" class="pequeno verde">
+        <img src="./imagens/img-pequena2.png" class="pequeno rosa">
+        <img src="./imagens/img-pequena3.png" class="pequeno pitaia">
+    </div>
+</body>
+
+<script>
+    let circulo = document.querySelector(".circulo")
+    let imgcopo = document.querySelector(".verdao")
+    let verde = document.querySelector(".verde")
+    let rosa = document.querySelector(".rosa")
+    let pitaia = document.querySelector(".pitaia")
+
+    rosa.addEventListener("click", () => {
+        imgcopo.src = "./imagens/img2.png"
+        circulo.style.background = "#EB7495"
+    })
+
+    verde.addEventListener("click", () => {
+        imgcopo.src = "./imagens/img1.png"
+        circulo.style.background = "#017143"
+    })
+
+    pitaia.addEventListener("click", () => {
+        imgcopo.src = "./imagens/img3.png"
+        circulo.style.background = "#D752b1"
+    })
+
+    botao.addEventListener("click")
+
+</script>
+
+</html>
